@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'disease_grid_page.dart';
 import 'package:latihanquiztolol/home.dart';
 import 'package:latihanquiztolol/disease_list_page.dart';
 
@@ -17,7 +18,8 @@ class login extends StatelessWidget {
           backgroundColor: Colors.cyan,
           title: Text('Login'),
         ),
-        body: Center(
+        body: Padding(
+          padding: EdgeInsets.all(10),
           child: Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -47,7 +49,7 @@ class login extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => DiseaseListPage(),//home(),
+                              builder: (context) => DiseaseGridPage(),//home(),
                             ),
                           );
                         } else {
